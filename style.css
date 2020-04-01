@@ -2,3 +2,10 @@ tableBox {
     width: 1000px;
     height: 800px;
 }
+
+#wrapper {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #bada55;
+    margin: 20px auto;
+}

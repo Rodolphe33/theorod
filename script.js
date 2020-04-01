@@ -1,23 +1,50 @@
 $(function() {
 
+    // color
     $(document).ready(function() {
-        $('').click(function() {
-            $('').slideToggle();
+        $('.codecouleur1').css('backgroun-color', '#bada55');
+
+    });
+    $(document).ready(function() {
+        $('.codecouleur2').css('backgroun-color', 'yelow');
+
+    });
+    $(document).ready(function() {
+        $('.codecouleur3').css('backgroun-color', 'red');
+
+    });
+
+    // hide
+    $(document).ready(function() {
+        $('#ligne1').click(function() {
+            $('').hide(1000);
         });
     });
 
+    // show
     $(document).ready(function() {
-        $('').click(function() {
+        $('#line1').click(function() {
+            $('').hide(1000);
+        });
+    });
+    $(document).ready(function() {
+        $('#line2').click(function() {
+            $('').hide(1000);
+        });
+    });
+    $(document).ready(function() {
+        $('#line3').click(function() {
             $('').hide(1000);
         });
     });
 
     $(document).ready(function() {
-        $('').click(function() {
+        $('#line4').click(function() {
             $('').show(1000);
         });
     });
 
+    // hide
     $(document).ready(function() {
         $('').click(function() {
             $('').slideToggle();
