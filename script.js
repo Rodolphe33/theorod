@@ -1,30 +1,23 @@
 $(function() {
 
-    // color
-    $(document).ready(function() {
-        $('.codecouleur1').css('backgroun-color', '#bada55');
-
-    });
-    $(document).ready(function() {
-        $('.codecouleur2').css('backgroun-color', 'yelow');
-
-    });
-    $(document).ready(function() {
-        $('.codecouleur3').css('backgroun-color', 'red');
-
-    });
-
     // hide
     $(document).ready(function() {
-        $('#ligne1').click(function() {
-            $('').hide(1000);
+        $('#line1').click(function() {
+            $("#cache").slideToggle();
         });
     });
 
+    $(document).ready(function() {
+        $("#line2").click(function() {
+            $("#cache").slideToggle();
+        });
+    });
+
+
     // show
     $(document).ready(function() {
-        $('#line1').click(function() {
-            $('').hide(1000);
+        $('#id1').click(function() {
+            $('.hide').slideToggle(1000);
         });
     });
     $(document).ready(function() {
@@ -44,149 +37,145 @@ $(function() {
         });
     });
 
-    // hide
-    $(document).ready(function() {
-        $('').click(function() {
-            $('').slideToggle();
-        });
-    });
+    // Pagination
+
+    $('#wrapper').pagination({
+        dataSource: [1, 2, 3, 4, 5, 6],
+        callback: function(data, pagination) {
+            // template method of yourself
+            var html = template(data);
+            dataContainer.html(html);
+        }
+    })
 
 
-    data = [{
+    var data = [{
             id: 1,
-            sujet: 'Leanne Graham',
-            detail: 'Bret',
-            date: '<a href="http://www.google.com">Google</a>',
-            nom: '',
-            priorite: ''
+            sujet: '404',
+            date: 01 / 04 / 2020,
+            nom: 'KEVIN',
+            info: 'The one',
+            codecou: ''
         },
         {
             id: 2,
-            sujet: 'Ervin Howell',
-            detail: 'Antonette',
-            date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
-            nom: '',
-            priorite: ''
+            sujet: '200',
+            date: 02 / 04 / 2020,
+            nom: 'Kévin',
+            info: 'Beau gosse',
+            codecou: ''
         },
         {
             id: 3,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 4,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 5,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 6,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 7,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 8,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 9,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 10,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 11,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 12,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 13,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 14,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 15,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
+            codecou: ''
         },
         {
             id: 16,
             sujet: 'Ervin Howell',
-            detail: 'Antonette',
+            info: 'Antonette',
             date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
             nom: '',
-            priorite: ''
-        },
-        {
-            id: 17,
-            sujet: 'Ervin Howell',
-            detail: 'Antonette',
-            date: '<a href="https://github.com/akveo/ng2-admin">Ng2 Admin</a>',
-            nom: '',
-            priorite: ''
+            codecou: ''
         },
     ];
 });

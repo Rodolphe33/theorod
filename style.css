@@ -1,11 +1,16 @@
-tableBox {
-    width: 1000px;
-    height: 800px;
-}
-
 #wrapper {
     width: 1000px;
     height: 500px;
     border: 1px solid #bada55;
     margin: 20px auto;
+}
+
+#cache {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: none;
+}
+
+.global {
+    background-color: grey;
 }
