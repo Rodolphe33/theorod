@@ -8,6 +8,8 @@
     <link type="text/css" rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="jquery_v3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -15,163 +17,230 @@
 </head>
 
 <body>
-    <div class="table-responsive tableBox" id="wrapper">
-        <h1>Demandes d'interventions</h1>
-        <table class="table table-striped table-sm" id="keywords">
-            <thead>
-                <tr id='ligne'>
-                    <th id="id" scope="col-1"><i class="fas fa-wine-bottle"></i></th>
-                    <th id='nom' scope="col-2"><i class="fas fa-user">&nbsp; Nom</i></th>
-                    <th id='sujet' scope="col-2">Sujet</th>
-                    <th id='desc' scope="col-5">Description</th>
-                    <th id='priorite' scope="col-1">Priorité</th>
-                    <th id='date' scope="col-1"><i class="fas fa-calendar-alt">&nbsp; Date</i></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr id="line1" class="line">
-                    <td id="id1" class="id">1</td>
-                    <td id="sujet1" class="sujet">ipsum</td>
-                    <td id="codecou1" class="codecouleur1"><i class="fas fa-square"></i></td>
-                    <td id="date1" class="date">01/04/2020</td>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown button
-                            </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item nom" href="#" id="nom1">MartinAction</a>
-                            <a class="dropdown-item information" href="#" id="info1">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                        <!--<td id="nom1" class="nom">Martin</td>
-                        <td id="info1" class="information">dolor</td>-->
+    <div class="" id="wrapper">
+        <h1>Demande d'interventions</h1>
+
+        <div id="content" class="d-flex justify-content-around">
+
+            <!-- Bloc 1 -->
+            <div class="global">
+                <!-- début global -->
+                <div id="inter1">
+                    <div id="line1">Intervention #1</div>
+                    <div id="cache">
+                        <p>Mon contenu d'intervention</p>
+                        <p>Etc.</p>
                     </div>
-                </tr>
-                <tr id="line2" class="line">
-                    <td id="id2" class="id">2</td>
-                    <td id="nom2" class="nom">Bernard</td>
-                    <td id="sujet2" class="sujet">ipsum</td>
-                    <td id="info2" class="information">dolor</td>
-                    <td id="codecou2" class="codecouleur">sit</td>
-                    <td id="date2" class="date">31/03/2020</td>
-                </tr>
-                <tr id="line3" class="line">
-                    <td id="id3" class="id">3</td>
-                    <td id="nom3" class="nom">Thomas</td>
-                    <td id="sujet3" class="sujet">ipsum</td>
-                    <td id="info3" class="information">dolor</td>
-                    <td id="codecou3" class="codecouleur">sit</td>
-                    <td id="date3" class="date">28/03/2020</td>
-                </tr>
-                <tr id="line4" class="line">
-                    <td id="id4" class="id">4</td>
-                    <td id="nom4" class="nom">Petit</td>
-                    <td id="sujet4" class="sujet">ipsum</td>
-                    <td id="info4" class="information">dolor</td>
-                    <td id="codecou4" class="codecouleur">sit</td>
-                    <td id="date4" class="date">22/03/2020</td>
-                </tr>
-                <tr id="line5" class="line">
-                    <td id="id5" class="id">5</td>
-                    <td id="nom5" class="nom">Robert</td>
-                    <td id="sujet5" class="sujet">ipsum</td>
-                    <td id="info5" class="information">dolor</td>
-                    <td id="codecou5" class="codecouleur">sit</td>
-                    <td id="date5" class="date">20/03/2020</td>
-                </tr>
-                <tr id="line6" class="line">
-                    <td id="id6" class="id">6</td>
-                    <td id="nom6" class="nom">Richard</td>
-                    <td id="sujet6" class="sujet">ipsum</td>
-                    <td id="info6" class="information">dolor</td>
-                    <td id="codecou6" class="codecouleur">sit</td>
-                    <td id="date6" class="date">19/03/2020</td>
-                </tr>
-                <tr id="line7" class="line">
-                    <td id="id7" class="id">7</td>
-                    <td id="nom7" class="nom">Durand</td>
-                    <td id="sujet7" class="sujet">ipsum</td>
-                    <td id="info7" class="information">dolor</td>
-                    <td id="codecou7" class="codecouleur">sit</td>
-                    <td id="date7" class="date">18/03/2020</td>
-                </tr>
-                <tr id="line8" class="line">
-                    <td id="id8" class="id">8</td>
-                    <td id="nom8" class="nom">Dubois</td>
-                    <td id="sujet8" class="sujet">ipsum</td>
-                    <td id="info8" class="information">dolor</td>
-                    <td id="codecou8" class="codecouleur3">sit</td>
-                    <td id="date8" class="date">15/03/2020</td>
-                </tr>
-                <tr id="line9" class="line">
-                    <td id="id9" class="id">9</td>
-                    <td id="nom9" class="nom">Moreau</td>
-                    <td id="sujet9" class="sujet">ipsum</td>
-                    <td id="info9" class="information">dolor</td>
-                    <td id="codecou9" class="codecouleur3">sit</td>
-                    <td id="date9" class="date">12/03/2020</td>
-                </tr>
-                <tr id="line10" class="line">
-                    <td id="id10" class="id">10</td>
-                    <td id="nom10" class="nom">Laurent</td>
-                    <td id="sujet10" class="sujet">ipsum</td>
-                    <td id="info10" class="information">dolor</td>
-                    <td id="codecou10" class="codecouleur">sit</td>
-                    <td id="date10" class="date">10/03/2020</td>
-                </tr>
-                <tr id="line11" class="line">
-                    <td id="id11" class="id">11</td>
-                    <td id="nom11" class="nom">Simon</td>
-                    <td id="sujet11" class="sujet">ipsum</td>
-                    <td id="info11" class="information">dolor</td>
-                    <td id="codecou11" class="codecouleur2">sit</td>
-                    <td id="date11" class="date">09/03/2020</td>
-                </tr>
-                <tr id="line12" class="line">
-                    <td id="id12" class="id">12</td>
-                    <td id="nom12" class="nom">Michel</td>
-                    <td id="sujet12" class="sujet">ipsum</td>
-                    <td id="info12" class="information">dolor</td>
-                    <td id="codecou12" class="codecouleur1">sit</td>
-                    <td id="date12" class="date">07/03/2020</td>
-                </tr>
-                <tr id="line13" class="line">
-                    <td id="id13" class="id">13</td>
-                    <td id="nom13" class="nom">Lefebvre</td>
-                    <td id="sujet13" class="sujet">ipsum</td>
-                    <td id="info13" class="information">dolor</td>
-                    <td id="codecou13" class="codecouleur1">sit</td>
-                    <td id="date13" class="date">07/03/2020</td>
-                </tr>
-                <tr id="line14" class="line">
-                    <td id="id14" class="id">14</td>
-                    <td id="nom14" class="nom">Leroy</td>
-                    <td id="sujet14" class="sujet">ipsum</td>
-                    <td id="info14" class="information">dolor</td>
-                    <td id="codecou14" class="codecouleur">sit</td>
-                    <td id="date14" class="date">06/03/2020</td>
-                </tr>
-                <tr id="line15" class="line">
-                    <td id="id15" class="id">15</td>
-                    <td id="nom15" class="nom">Roux</td>
-                    <td id="sujet15" class="sujet">ipsum</td>
-                    <td id="info15" class="information">dolor</td>
-                    <td id="codecou15" class="codecouleur">sit</td>
-                    <td id="date15" class="date">05/03/2020</td>
-                </tr>
-                <tr id="line16" class="line">
-                    <td id="id16" class="id">16</td>
-                    <td id="nom16" class="nom">David</td>
-                    <td id="sujet16" class="sujet">ipsum</td>
-                    <td id="info16" class="information">dolor</td>
-                    <td id="codecou16" class="codecouleur3">sit</td>
-                    <td id="date16" class="date">02/03/2020</td>
-                </tr>
-            </tbody>
-        </table>
+                </div>
+                <!-- fin global -->
+                <button id="add1" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
+                <button id="edit1" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
+                <button id="del1">Supprimer</button>
+            </div>
+
+            <!-- Bloc 2 -->
+            <div class="global">
+                <!-- début global -->
+                <div id="inter2">
+                    <div id="line2">Intervention #2</div>
+                    <div id="cache">
+                        <p>Mon contenu d'intervention</p>
+                        <p>Etc.</p>
+                    </div>
+                </div>
+                <!-- fin global -->
+                <button id="add2" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
+                <button id="edit2" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
+                <button id="del1">Supprimer</button>
+            </div>
+
+            <!-- Bloc 3 -->
+            <div class="global">
+                <!-- début global -->
+                <div id="inter3">
+                    <div id="line3">Intervention #3</div>
+                    <div id="cache">
+                        <p>Mon contenu d'intervention</p>
+                        <p>Etc.</p>
+                    </div>
+                </div>
+                <!-- fin global -->
+                <button id="add3" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
+                <button id="edit3" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
+                <button id="del1">Supprimer</button>
+            </div>
+        </div>
+
+        <div id="content" class="d-flex justify-content-around">
+            <!-- Bloc 4 -->
+            <div class="global">
+                <!-- début global -->
+                <div id="inter4">
+                    <div id="line4">Intervention #4</div>
+                    <div id="cache">
+                        <p>Mon contenu d'intervention</p>
+                        <p>Etc.</p>
+                    </div>
+                </div>
+                <!-- fin global -->
+                <button id="add4" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
+                <button id="edit4" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
+                <button id="del1">Supprimer</button>
+            </div>
+
+            <!-- Bloc 5 -->
+            <div class="global">
+                <!-- début global -->
+                <div id="inter5">
+                    <div id="line5">Intervention #5</div>
+                    <div id="cache">
+                        <p>Mon contenu d'intervention</p>
+                        <p>Etc.</p>
+                    </div>
+                </div>
+                <!-- fin global -->
+                <button id="add5" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
+                <button id="edit5" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
+                <button id="del1">Supprimer</button>
+            </div>
+
+            <!-- Bloc 6 -->
+            <div class="global">
+                <!-- début global -->
+                <div id="inter6">
+                    <div id="line6">Intervention #6</div>
+                    <div id="cache">
+                        <p>Mon contenu d'intervention</p>
+                        <p>Etc.</p>
+                    </div>
+                </div>
+                <!-- fin global -->
+                <button id="add6" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
+                <button id="edit6" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
+                <button id="del1">Supprimer</button>
+            </div>
+        </div>
+
+        <div id="content" class="d-flex justify-content-around">
+            <!-- Bloc 7 -->
+            <div class="global">
+                <!-- début global -->
+                <div id="inter7">
+                    <div id="line7">Intervention #7</div>
+                    <div id="cache">
+                        <p>Mon contenu d'intervention</p>
+                        <p>Etc.</p>
+                    </div>
+                </div>
+                <!-- fin global -->
+                <button id="add7" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
+                <button id="edit7" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
+                <button id="del1">Supprimer</button>
+            </div>
+
+            <!-- Bloc 8 -->
+            <div class="global">
+                <!-- début global -->
+                <div id="inter8">
+                    <div id="line8">Intervention #8</div>
+                    <div id="cache">
+                        <p>Mon contenu d'intervention</p>
+                        <p>Etc.</p>
+                    </div>
+                </div>
+                <!-- fin global -->
+                <button id="add8" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
+                <button id="edit8" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
+                <button id="del1">Supprimer</button>
+            </div>
+
+            <!-- Bloc 9 -->
+            <div class="global">
+                <!-- début global -->
+                <div id="inter9">
+                    <div id="line9">Intervention #9</div>
+                    <div id="cache">
+                        <p>Mon contenu d'intervention</p>
+                        <p>Etc.</p>
+                    </div>
+                </div>
+                <!-- fin global -->
+                <button id="add9" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
+                <button id="edit9" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
+                <button id="del1">Supprimer</button>
+            </div>
+        </div>
     </div>
 
 
+    <!-- Modal d'ajout-->
+    <div class="modal fade" id="ajoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ajout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Modifier-->
+    <div class="modal fade" id="modifModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modification</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#line1").click(function() {
+                alert('ici');
+                $("#cache").slideToggle();
+            });
+        });
+    </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
