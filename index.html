@@ -5,267 +5,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Therod</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="jquery_v3.4.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <link type="text/css" rel="stylesheet" href="./style.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b7494ae307.js" crossorigin="anonymous"></script>
-    <style>
-
-    </style>
 </head>
 
 <body>
-    <div class="" id="wrapper">
-        <h1>Demande d'interventions</h1>
-
-        <div id="content" class="d-flex justify-content-around">
-
-            <!-- Bloc 1 -->
-            <div class="global">
-                <!-- début global -->
-                <div id="inter1">
-                    <div id="line1">Intervention #1</div>
-                    <p>Date: </p>
-                    <div id="cache">
-                        <p>Nom: </p>
-                        <p>Description: </p>
-                        <p>Priorité: </p>
-                    </div>
-                </div>
-                <!-- fin global -->
-                <button id="add1" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
-                <button id="edit1" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
-                <button id="del1">Supprimer</button>
-            </div>
-
-            <!-- Bloc 2 -->
-            <div class="global">
-                <!-- début global -->
-                <div id="inter2">
-                    <div id="line2">Intervention #2</div>
-                    <p>Date: </p>
-                    <div id="cache">
-                        <p>Nom: </p>
-                        <p>Description: </p>
-                        <p>Priorité: </p>
-                    </div>
-                </div>
-                <!-- fin global -->
-                <button id="add2" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
-                <button id="edit2" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
-                <button id="del1">Supprimer</button>
-            </div>
-
-            <!-- Bloc 3 -->
-            <div class="global">
-                <!-- début global -->
-                <div id="inter3">
-                    <div id="line3">Intervention #3</div>
-                    <p>Date: </p>
-                    <div id="cache">
-                        <p>Nom: </p>
-                        <p>Description: </p>
-                        <p>Priorité: </p>
-                    </div>
-                </div>
-                <!-- fin global -->
-                <button id="add3" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
-                <button id="edit3" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
-                <button id="del1">Supprimer</button>
-            </div>
-        </div>
-
-        <div id="content" class="d-flex justify-content-around">
-            <!-- Bloc 4 -->
-            <div class="global">
-                <!-- début global -->
-                <div id="inter4">
-                    <div id="line4">Intervention #4</div>
-                    <p>Date: </p>
-                    <div id="cache">
-                        <p>Nom: </p>
-                        <p>Description: </p>
-                        <p>Priorité: </p>
-                    </div>
-                </div>
-                <!-- fin global -->
-                <button id="add4" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
-                <button id="edit4" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
-                <button id="del1">Supprimer</button>
-            </div>
-
-            <!-- Bloc 5 -->
-            <div class="global">
-                <!-- début global -->
-                <div id="inter5">
-                    <div id="line5">Intervention #5</div>
-                    <p>Date: </p>
-                    <div id="cache">
-                        <p>Nom: </p>
-                        <p>Description: </p>
-                        <p>Priorité: </p>
-                    </div>
-                </div>
-                <!-- fin global -->
-                <button id="add5" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
-                <button id="edit5" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
-                <button id="del1">Supprimer</button>
-            </div>
-
-            <!-- Bloc 6 -->
-            <div class="global">
-                <!-- début global -->
-                <div id="inter6">
-                    <div id="line6">Intervention #6</div>
-                    <p>Date: </p>
-                    <div id="cache">
-                        <p>Nom: </p>
-                        <p>Description: </p>
-                        <p>Priorité: </p>
-                    </div>
-                </div>
-                <!-- fin global -->
-                <button id="add6" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
-                <button id="edit6" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
-                <button id="del1">Supprimer</button>
-            </div>
-        </div>
-
-        <div id="content" class="d-flex justify-content-around">
-            <!-- Bloc 7 -->
-            <div class="global">
-                <!-- début global -->
-                <div id="inter7">
-                    <div id="line7">Intervention #7</div>
-                    <p>Date: </p>
-                    <div id="cache">
-                        <p>Nom: </p>
-                        <p>Description: </p>
-                        <p>Priorité: </p>
-                    </div>
-                </div>
-                <!-- fin global -->
-                <button id="add7" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
-                <button id="edit7" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
-                <button id="del1">Supprimer</button>
-            </div>
-
-            <!-- Bloc 8 -->
-            <div class="global">
-                <!-- début global -->
-                <div id="inter8">
-                    <div id="line8">Intervention #8</div>
-                    <p>Date: </p>
-                    <div id="cache">
-                        <p>Nom: </p>
-                        <p>Description: </p>
-                        <p>Priorité: </p>
-                    </div>
-                </div>
-                <!-- fin global -->
-                <button id="add8" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
-                <button id="edit8" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
-                <button id="del1">Supprimer</button>
-            </div>
-
-            <!-- Bloc 9 -->
-            <div class="global">
-                <!-- début global -->
-                <div id="inter9">
-                    <div id="line9">Intervention #9</div>
-                    <p>Date: </p>
-                    <div id="cache">
-                        <p>Nom: </p>
-                        <p>Description: </p>
-                        <p>Priorité: </p>
-                    </div>
-                </div>
-                <!-- fin global -->
-                <button id="add9" data-toggle="modal" data-target="#ajoutModal">Ajouter</button>
-                <button id="edit9" data-toggle="modal" data-target="#ajoutModal">Modifier</button>
-                <button id="del1">Supprimer</button>
-            </div>
-        </div>
+    <div class="d-flex">
+        <h2 class="mr-auto p-2">Liste d'intervention</h2>
+        <button id="addbutton" type="button" class="btn btn-primary ml-auto p-2 ">Ajouter</button>
     </div>
 
 
-    <!-- Modal d'ajout-->
-    <div class="modal fade" id="ajoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ajout</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
+    <div class="table-responsive tableBox col-12">
+
+        <div id="content">
+            <div class="d-flex justify-content-around">
+                <!-- Bloc 1 -->
+                <div class="global">
+                    <!-- début global -->
+                    <div id="inter1">
+                        <div class="head">
+                            <p id="id1" class="id">Intervention #1</p>
+                            <p id="nom1" class="nom">Nom: Martin</p>
+                            <p id="date1" class="date">Date: 01/04/2020</p>
                         </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                        <div id="cache1" class="cache">
+                            <p id="sujet1" class="sujet">Question moyen de contact</p>
+                            <p id="info1" class="information">Par quels moyens puis-je joindre un SAV ?</p>
                         </div>
-                    </form>
+                    </div>
+                    <!-- fin global -->
+                    <div>
+                        <button type="button" class="btn btn-outline-info">Modifier</button>
+                        <button type="button" class="btn btn-outline-danger">Supprimer</button>
+                    </div>
+                    <!-- fin Bloc 1 -->
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+
+                <!-- Bloc 2 -->
+                <div class="global">
+                    <!-- début global -->
+                    <div id="inter2">
+                        <div class="head">
+                            <p id="id2" class="id">Intervention #2</p>
+                            <p id="nom2" class="nom">Nom: Bernard</p>
+                            <p id="date2" class="date">Date: 31/03/2020</p>
+                        </div>
+                        <div id="cache2" class="cache">
+                            <p id="sujet2" class="sujet">Question moyen de contact</p>
+                            <p id="info2" class="information">Par quels moyens puis-je joindre un SAV ?</p>
+                        </div>
+                    </div>
+                    <!-- fin global -->
+                    <div>
+                        <button type="button" class="btn btn-outline-info">Modifier</button>
+                        <button type="button" class="btn btn-outline-danger">Supprimer</button>
+                    </div>
+                    <!-- fin Bloc 2 -->
+                </div>
+
+                <!-- Bloc 3 -->
+                <div class="global">
+                    <!-- début global -->
+                    <div id="inter3">
+                        <div class="head">
+                            <p id="id3" class="id">Intervention #3</p>
+                            <p id="nom3" class="nom">Nom: Thomas</p>
+                            <p id="date3" class="date">Date: 28/03/2020</p>
+                        </div>
+                        <div id="cache3" class="cache">
+                            <p id="sujet3" class="sujet">Question moyen de contact</p>
+                            <p id="info3" class="information">Par quels moyens puis-je joindre un SAV ?</p>
+                        </div>
+                    </div>
+                    <!-- fin global -->
+                    <div>
+                        <button type="button" class="btn btn-outline-info">Modifier</button>
+                        <button type="button" class="btn btn-outline-danger">Supprimer</button>
+                    </div>
+                    <!-- fin Bloc 3 -->
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-around">
+                <!-- Bloc 4 -->
+                <div class="global">
+                    <!-- début global -->
+                    <div id="inter4">
+                        <div class="head">
+                            <p id="id4" class="id">Intervention #4</p>
+                            <p id="nom4" class="nom">Nom: Petit</p>
+                            <p id="date4" class="date">Date: 22/03/2020</p>
+                        </div>
+                        <div id="cache4" class="cache">
+                            <p id="sujet4" class="sujet">Question moyen de contact</p>
+                            <p id="info4" class="information">Par quels moyens puis-je joindre un SAV ?</p>
+                        </div>
+                    </div>
+                    <!-- fin global -->
+                    <div>
+                        <button type="button" class="btn btn-outline-info">Modifier</button>
+                        <button type="button" class="btn btn-outline-danger">Supprimer</button>
+                    </div>
+                    <!-- fin Bloc 4 -->
+                </div>
+                <!-- Bloc 5 -->
+                <div class="global">
+                    <!-- début global -->
+                    <div id="inter5">
+                        <div class="head">
+                            <p id="id5" class="id">Intervention #5</p>
+                            <p id="nom5" class="nom">Nom: Robert</p>
+                            <p id="date5" class="date">Date: 20/03/2020</p>
+                        </div>
+                        <div id="cache5" class="cache">
+                            <p id="sujet5" class="sujet">Question moyen de contact</p>
+                            <p id="info5" class="information">Par quels moyens puis-je joindre un SAV ?</p>
+                        </div>
+                    </div>
+                    <!-- fin global -->
+                    <div>
+                        <button type="button" class="btn btn-outline-info">Modifier</button>
+                        <button type="button" class="btn btn-outline-danger">Supprimer</button>
+                    </div>
+                    <!-- fin Bloc 5 -->
+                </div>
+                <!-- Bloc 6 -->
+                <div class="global">
+                    <!-- début global -->
+                    <div id="inter6">
+                        <div class="head">
+                            <p id="id6" class="id">Intervention #6</p>
+                            <p id="nom6" class="nom">Nom: Richard</p>
+                            <p id="date6" class="date">Date: 19/03/2020</p>
+                        </div>
+                        <div id="cache6" class="cache">
+                            <p id="sujet6" class="sujet">Question moyen de contact</p>
+                            <p id="info6" class="information">Par quels moyens puis-je joindre un SAV ?</p>
+                        </div>
+                    </div>
+                    <!-- fin global -->
+                    <div>
+                        <button type="button" class="btn btn-outline-info">Modifier</button>
+                        <button type="button" class="btn btn-outline-danger">Supprimer</button>
+                    </div>
+                    <!-- fin Bloc 6 -->
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-around">
+                <!-- Bloc 7 -->
+                <div class="global">
+                    <!-- début global -->
+                    <div id="inter7">
+                        <div class="head">
+                            <p id="id7" class="id">Intervention #7</p>
+                            <p id="nom7" class="nom">Nom: Durand</p>
+                            <p id="date7" class="date">Date: 18/03/2020</p>
+                        </div>
+                        <div id="cache7" class="cache">
+                            <p id="sujet7" class="sujet">Question moyen de contact</p>
+                            <p id="info7" class="information">Par quels moyens puis-je joindre un SAV ?</p>
+                        </div>
+                    </div>
+                    <!-- fin global -->
+                    <div>
+                        <button type="button" class="btn btn-outline-info">Modifier</button>
+                        <button type="button" class="btn btn-outline-danger">Supprimer</button>
+                    </div>
+                    <!-- fin Bloc 7 -->
+                </div>
+                <!-- Bloc 8 -->
+                <div class="global">
+                    <!-- début global -->
+                    <div id="inter8">
+                        <div class="head">
+                            <p id="id8" class="id">Intervention #8</p>
+                            <p id="nom8" class="nom">Nom: Dubois</p>
+                            <p id="date8" class="date">Date: 15/03/2020</p>
+                        </div>
+                        <div id="cache8" class="cache">
+                            <p id="sujet8" class="sujet">Question moyen de contact</p>
+                            <p id="info8" class="information">Par quels moyens puis-je joindre un SAV ?</p>
+                        </div>
+                    </div>
+                    <!-- fin global -->
+                    <div>
+                        <button type="button" class="btn btn-outline-info">Modifier</button>
+                        <button type="button" class="btn btn-outline-danger">Supprimer</button>
+                    </div>
+                    <!-- fin Bloc 8 -->
+                </div>
+                <!-- Bloc 9 -->
+                <div class="global">
+                    <!-- début global -->
+                    <div id="inter9">
+                        <div class="head">
+                            <p id="id9" class="id">Intervention #9</p>
+                            <p id="nom9" class="nom">Nom: Moreau</p>
+                            <p id="date9" class="date">Date: 12/03/2020</p>
+                        </div>
+                        <div id="cache9" class="cache">
+                            <p id="sujet9" class="sujet">Question moyen de contact</p>
+                            <p id="info9" class="information">Par quels moyens puis-je joindre un SAV ?</p>
+                        </div>
+                    </div>
+                    <!-- fin global -->
+                    <div>
+                        <button type="button" class="btn btn-outline-info">Modifier</button>
+                        <button type="button" class="btn btn-outline-danger">Supprimer</button>
+                    </div>
+                    <!-- fin Bloc 9 -->
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Modal Modifier-->
-    <div class="modal fade" id="modifModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modification</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        $(document).ready(function() {
-            $("#line1").click(function() {
-                $("#cache").slideToggle();
-            });
-        });
-    </script>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
