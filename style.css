@@ -36,6 +36,24 @@ tableBox {
     font-size: 30px;
 }
 
+.red {
+    border: solid;
+    border-width: 5px;
+    border-color: red;
+}
+
+.orange {
+    border: solid;
+    border-width: 5px;
+    border-color: orange;
+}
+
+.yellow {
+    border: solid;
+    border-width: 5px;
+    border-color: yellow;
+}
+
 .global {
     /* border: 1px solid; */
     margin-bottom: 10px;
