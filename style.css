@@ -1,11 +1,43 @@
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
 tableBox {
     width: 1000px;
     height: 800px;
+    margin: 0 auto;
 }
 
-#wrapper {
-    width: 1000px;
-    height: 500px;
-    border: 1px solid #bada55;
-    margin: 20px auto;
+
+#addbutton{
+    text-align: center;
+    margin: 20px;
+}
+
+.red{
+    color: red;
+    font-size: 30px;
+}
+
+.orange{
+    color: orange;
+    font-size: 30px;
+}
+
+.yellow{
+    color: yellow;
+    font-size: 30px;
+}
+
+.global{
+    border: solid;
+    margin-bottom: 10px;
+}
+
+.head{
+    border: solid
+    /* background (colorcategorie) */
 }
