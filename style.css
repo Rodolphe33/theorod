@@ -18,18 +18,21 @@ tableBox {
 }
 
 .red{
-    color: red;
-    font-size: 30px;
+    border: solid;
+    border-width: 5px;
+    border-color: red;
 }
 
 .orange{
-    color: orange;
-    font-size: 30px;
+    border: solid;
+    border-width: 5px;
+    border-color: orange;
 }
 
 .yellow{
-    color: yellow;
-    font-size: 30px;
+    border: solid;
+    border-width: 5px;
+    border-color: yellow;
 }
 
 .global{
@@ -38,6 +41,4 @@ tableBox {
 }
 
 .head{
-    border: solid
-    /* background (colorcategorie) */
 }
